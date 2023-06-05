@@ -1,3 +1,3 @@
-export const HeroTextDescr = ({ text = "", className = "" }) => {
-  return <p className={`${className} text-light`}>{text}</p>;
+export const TextDescription = ({ text = "", className = "" }) => {
+  return <p className={`${className}  uppercase`}>{text}</p>;
 };

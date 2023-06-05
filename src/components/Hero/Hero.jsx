@@ -1,5 +1,6 @@
 import Container from "../reusable/Container";
 import Heading from "../reusable/Heading";
+import { TextDescription } from "../reusable/TextDescription";
 
 import BtnList from "../reusable/BtnList";
 import {
@@ -7,11 +8,10 @@ import {
   mainHeroFirstTextDescr,
   mainHeroSecondTextDescr,
 } from "./heroData";
-import { HeroTextDescr } from "../reusable/TextDescription";
 
 const Hero = () => {
   return (
-    <section className="bg-dark pt-[196px] pb-[48px]">
+    <section className="bg-dark pt-[429px] pb-10 md:pt-[528px] md:pb-[38px] lg:pt-[196px] lg:pb-[48px]">
       <Container className="pr-[17px] md:pr-8">
         <Heading
           tag="h1"
@@ -21,13 +21,13 @@ const Hero = () => {
 
         <div className="flex flex-col gap-[66px] md:gap-[86px] lg:gap-[275px] lg:flex-row-reverse md:justify-end ">
           <BtnList data={heroBtnData} className="justify-center" />
-          <div className="flex flex-col gap-8 text-sm uppercase leading-[18px] tracking-[0.05em] md:flex-row md:justify-center ">
-            <HeroTextDescr
+          <div className="flex flex-col gap-8 text-sm text-light leading-[18px] tracking-[0.05em] md:flex-row md:justify-center ">
+            <TextDescription
               className=" w-[338px]"
               text={mainHeroFirstTextDescr}
             />
 
-            <HeroTextDescr
+            <TextDescription
               className=" w-[338px]"
               text={mainHeroSecondTextDescr}
             />

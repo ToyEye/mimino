@@ -1,6 +1,7 @@
 import Head from "next/head";
 
 import Hero from "@/components/Hero/Hero";
+import RestaurantHotelComplex from "@/components/RestaurantHotelComplex/RestaurantHotelComplex";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
 
       <Hero />
+      <RestaurantHotelComplex />
     </>
   );
 }
