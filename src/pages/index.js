@@ -3,6 +3,7 @@ import Head from "next/head";
 import Hero from "@/components/Hero/Hero";
 import RestaurantHotelComplex from "@/components/RestaurantHotelComplex";
 import BusinessClassHotel from "@/components/BusinessClassHotel";
+import AboutLuxary from "@/components/AboutLuxary";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <RestaurantHotelComplex />
       <BusinessClassHotel />
+      <AboutLuxary />
     </>
   );
 }
