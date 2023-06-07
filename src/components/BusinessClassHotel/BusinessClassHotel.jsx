@@ -1,17 +1,16 @@
 import Image from "next/image";
 
 import Container from "../reusable/Container";
-import Review from "../Review";
-
 import Heading from "../reusable/Heading";
 import { TextDescription } from "../reusable/TextDescription";
+
+import Review from "../Review";
 
 const BusinessClassHotel = () => {
   return (
     <section>
       <Container>
         <div className="lg:flex lg:flex-row-reverse lg:items-center lg:gap-[82px]   ">
-          {" "}
           <div className="relative mb-[54px] lg:m-0">
             <Image
               src="/businesHotelComplex/bar.jpg"
@@ -27,7 +26,7 @@ const BusinessClassHotel = () => {
               name="Alexander"
               rating="5.5"
               src="alexander"
-              className="absolute -bottom-[10%]  left-0 md:bottom-[25%] md:left-[10%]"
+              className="absolute -bottom-[10%]  left-0 md:bottom-[25%] md:left-[10%] lg:-left-[20%]"
             />
           </div>
           <div className="flex gap-10 flex-col-reverse md:flex-row ">
