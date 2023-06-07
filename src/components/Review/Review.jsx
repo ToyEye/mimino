@@ -7,7 +7,7 @@ const Review = ({ rating, name, src, className }) => {
     >
       <Image
         alt={name}
-        src={`/restaurantHotelComplex/${src}.jpg`}
+        src={`/review/${src}.jpg`}
         width={41}
         height={41}
         className="rounded-full "
@@ -17,7 +17,7 @@ const Review = ({ rating, name, src, className }) => {
           {name}
         </p>
         <p className="text-xs text-[#484848E5]">
-          give rating{" "}
+          give rating {""}
           <span className="font-medium text-[#F6F6F6]">{rating}</span>
         </p>
       </div>
