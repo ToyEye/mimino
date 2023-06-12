@@ -72,3 +72,13 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+/* .swiper-slide {
+  height: 201px !important;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-slide {
+    height: 309px !important;
+  }
+} */

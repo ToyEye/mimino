@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "pathToMob": "/mainSlider/mobCustomer.jpg",
+    "pathToTab": "/mainSlider/tabCustomer.jpg",
+    "pathToDesk": "/mainSlider/deskCustomer.jpg",
+    "descr": "Glass of wine"
+  },
+  {
+    "id": 2,
+    "pathToMob": "/mainSlider/mobAsparagus.jpg",
+    "pathToTab": "/mainSlider/tabAsparagus.jpg",
+    "pathToDesk": "/mainSlider/deskAsparagus.jpg",
+
+    "descr": "Dish with asparagus"
+  },
+  {
+    "id": 3,
+    "pathToMob": "/mainSlider/mobPasta.jpg",
+    "pathToTab": "/mainSlider/tabPasta.jpg",
+    "pathToDesk": "/mainSlider/deskPasta.jpg",
+    "descr": "Chef"
+  },
+  {
+    "id": 4,
+    "pathToMob": "/mainSlider/mobShot.jpg",
+    "pathToTab": "/mainSlider/tabShot.jpg",
+    "pathToDesk": "/mainSlider/deskShot.jpg",
+    "descr": "Cocktail"
+  },
+  {
+    "id": 5,
+    "pathToMob": "/mainSlider/mobSushi.jpg",
+    "pathToTab": "/mainSlider/tabSushi.jpg",
+    "pathToDesk": "/mainSlider/deskSushi.jpg",
+    "descr": "Happy customer"
+  },
+  {
+    "id": 6,
+    "pathToMob": "",
+    "pathToTab": "",
+    "pathToDesk": "/mainSlider/deskAlcohol.jpg",
+    "descr": "Dish with fish"
+  },
+  {
+    "id": 7,
+    "pathToMob": "",
+    "pathToTab": "",
+    "pathToDesk": "/mainSlider/deskChef.jpg",
+    "descr": "Dish with pasta"
+  },
+  {
+    "id": 8,
+    "pathToMob": "",
+    "pathToTab": "",
+    "pathToDesk": "/mainSlider/deskCocktail.jpg",
+    "descr": "Sandwich"
+  },
+  {
+    "id": 9,
+    "pathToMob": "",
+    "pathToTab": "",
+    "pathToDesk": "/mainSlider/deskFish.jpg",
+    "descr": "Shot"
+  },
+  {
+    "id": 10,
+    "pathToMob": "",
+    "pathToTab": "",
+    "pathToDesk": "/mainSlider/deskSandwich.jpg",
+    "descr": "Sushi"
+  }
+]
