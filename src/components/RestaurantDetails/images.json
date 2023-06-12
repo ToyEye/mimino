@@ -4,7 +4,7 @@
     "pathToMob": "/mainSlider/mobCustomer.jpg",
     "pathToTab": "/mainSlider/tabCustomer.jpg",
     "pathToDesk": "/mainSlider/deskCustomer.jpg",
-    "descr": "Glass of wine"
+    "descr": "Happy customer"
   },
   {
     "id": 2,
@@ -19,55 +19,48 @@
     "pathToMob": "/mainSlider/mobPasta.jpg",
     "pathToTab": "/mainSlider/tabPasta.jpg",
     "pathToDesk": "/mainSlider/deskPasta.jpg",
-    "descr": "Chef"
+    "descr": "Dish with pasta"
   },
   {
     "id": 4,
     "pathToMob": "/mainSlider/mobShot.jpg",
     "pathToTab": "/mainSlider/tabShot.jpg",
     "pathToDesk": "/mainSlider/deskShot.jpg",
-    "descr": "Cocktail"
+    "descr": "Shot"
   },
   {
     "id": 5,
     "pathToMob": "/mainSlider/mobSushi.jpg",
     "pathToTab": "/mainSlider/tabSushi.jpg",
     "pathToDesk": "/mainSlider/deskSushi.jpg",
-    "descr": "Happy customer"
+    "descr": "Sushi"
   },
   {
     "id": 6,
     "pathToMob": "",
     "pathToTab": "",
     "pathToDesk": "/mainSlider/deskAlcohol.jpg",
-    "descr": "Dish with fish"
+    "descr": "Glass of wine"
   },
   {
     "id": 7,
     "pathToMob": "",
     "pathToTab": "",
     "pathToDesk": "/mainSlider/deskChef.jpg",
-    "descr": "Dish with pasta"
+    "descr": "Chef"
   },
   {
     "id": 8,
     "pathToMob": "",
     "pathToTab": "",
     "pathToDesk": "/mainSlider/deskCocktail.jpg",
-    "descr": "Sandwich"
+    "descr": "Cocktail"
   },
   {
     "id": 9,
     "pathToMob": "",
     "pathToTab": "",
-    "pathToDesk": "/mainSlider/deskFish.jpg",
-    "descr": "Shot"
-  },
-  {
-    "id": 10,
-    "pathToMob": "",
-    "pathToTab": "",
     "pathToDesk": "/mainSlider/deskSandwich.jpg",
-    "descr": "Sushi"
+    "descr": "Sandwich"
   }
 ]

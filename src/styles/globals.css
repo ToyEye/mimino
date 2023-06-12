@@ -82,3 +82,18 @@ a {
     height: 309px !important;
   }
 } */
+.prev-slider,
+.next-slider {
+  position: absolute;
+  color: black;
+
+  left: 50%;
+}
+
+.prev-slider {
+  transform: translateX(-150px);
+}
+
+.next-slider {
+  transform: translateX(150px);
+}
