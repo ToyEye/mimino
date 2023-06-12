@@ -80,6 +80,13 @@ a {
 
   left: 0;
   bottom: -62px;
+
+  transition: 250ms linear;
+}
+
+.prev-slider:hover,
+.next-slider:hover {
+  color: grey;
 }
 
 .next-slider {
