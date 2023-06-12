@@ -5,6 +5,7 @@ import Container from "../reusable/Container";
 import Heading from "../reusable/Heading";
 import { TextDescription } from "../reusable/TextDescription";
 import BtnList from "../reusable/BtnList";
+import useMediaRules from "helpers/useMediaRules";
 
 import { hotelDetailsData } from "./hotelDetailsData";
 
@@ -16,32 +17,18 @@ const initialState = {
 const HotelDetails = () => {
   const [images, setImages] = useState(initialState);
 
+  const media = useMediaRules();
+
   useEffect(() => {
-    const minWidthQuery = window.matchMedia("(min-width: 768px)");
-    const maxWidthQuery = window.matchMedia("(max-width: 1440px)");
-
-    const handleWidthChange = () => {
-      if (minWidthQuery.matches && maxWidthQuery.matches) {
-        setImages({ bathImg: "bathFull", washbasin: "washbasinFull" });
-      } else {
-        setImages({
-          bathImg: "bathSq",
-          washbasin: "washbasinSq",
-        });
-      }
-    };
-
-    handleWidthChange(); // Проверить начальное состояние
-
-    minWidthQuery.addEventListener("change", handleWidthChange);
-    maxWidthQuery.addEventListener("change", handleWidthChange);
-
-    return () => {
-      minWidthQuery.removeEventListener("change", handleWidthChange);
-      maxWidthQuery.removeEventListener("change", handleWidthChange);
-    };
-  }, []);
-  console.log(images);
+    if (media !== "mobile") {
+      setImages({ bathImg: "bathFull", washbasin: "washbasinFull" });
+    } else {
+      setImages({
+        bathImg: "bathSq",
+        washbasin: "washbasinSq",
+      });
+    }
+  }, [media]);
 
   return (
     <section className="bg-[#121212] py-8 lg:pt-11 lg:pb-[60px]  ">
