@@ -57,10 +57,10 @@ export const Slider = ({ images, className }) => {
         })}
       </Swiper>
       <div className="prev-slider swiper-button-disabled " role={"button"}>
-        <BsChevronLeft size={48} />
+        <BsChevronLeft size={25} />
       </div>
       <div className="next-slider swiper-button-disabled " role={"button"}>
-        <BsChevronRight size={48} />
+        <BsChevronRight size={25} />
       </div>
     </div>
   );

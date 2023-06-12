@@ -8,7 +8,7 @@ import Slider from "../reusable/Swiper";
 
 const RestaurantDetails = () => {
   return (
-    <section>
+    <section className="pt-11 pb-[113px] ">
       <Container>
         <Heading tag="h2" text="restaurant" />
         <TextDescription text="Relax and unwind with our delicious offerings, available any time of day." />
