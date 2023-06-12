@@ -72,3 +72,35 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.prev-slider,
+.next-slider {
+  position: absolute;
+  color: black;
+
+  left: 0;
+  bottom: -62px;
+}
+
+.next-slider {
+  transform: translateX(55px);
+}
+
+@media screen and (min-width: 1440px) {
+  .prev-slider,
+  .next-slider {
+    position: absolute;
+    color: black;
+
+    left: 50%;
+    bottom: -62px;
+  }
+
+  .prev-slider {
+    transform: translateX(-50px);
+  }
+
+  .next-slider {
+    transform: translateX(25px);
+  }
+}

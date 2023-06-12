@@ -5,6 +5,7 @@ import RestaurantHotelComplex from "@/components/RestaurantHotelComplex";
 import BusinessClassHotel from "@/components/BusinessClassHotel";
 import AboutLuxary from "@/components/AboutLuxary";
 import HotelDetails from "@/components/HotelDetails";
+import RestaurantDetails from "@/components/RestaurantDetails/RestaurantDetails";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Hero />
       <RestaurantHotelComplex />
       <BusinessClassHotel />
+      <RestaurantDetails />
       <AboutLuxary />
       <HotelDetails />
     </>
