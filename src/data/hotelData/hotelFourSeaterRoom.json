@@ -1,23 +1,23 @@
 [
   {
     "id": 1,
-    "pathToMob": "/hotelRoom/hotelFourSeaterRoom/mobKitchen.jpg",
-    "pathToTab": "/hotelRoom/hotelFourSeaterRoom/tabKitchen.jpg",
-    "pathToDesk": "/hotelRoom/hotelFourSeaterRoom/deskKitchen.jpg",
-    "descr": "Kitchen in double luxury room"
+    "mob": "/hotelRoom/hotelFourSeaterRoom/mobKitchen.jpg",
+    "tab": "/hotelRoom/hotelFourSeaterRoom/tabKitchen.jpg",
+    "desk": "/hotelRoom/hotelFourSeaterRoom/deskKitchen.jpg",
+    "description": "Kitchen in double luxury room"
   },
   {
     "id": 2,
-    "pathToMob": "/hotelRoom/hotelFourSeaterRoom/mobBed.jpg",
-    "pathToTab": "/hotelRoom/hotelFourSeaterRoom/tabBed.jpg",
-    "pathToDesk": "/hotelRoom/hotelFourSeaterRoom/deskBed.jpg",
-    "descr": "Bed in double luxury room"
+    "mob": "/hotelRoom/hotelFourSeaterRoom/mobBed.jpg",
+    "tab": "/hotelRoom/hotelFourSeaterRoom/tabBed.jpg",
+    "desk": "/hotelRoom/hotelFourSeaterRoom/deskBed.jpg",
+    "description": "Bed in double luxury room"
   },
   {
     "id": 3,
-    "pathToMob": "/hotelRoom/hotelFourSeaterRoom/mobBath.jpg",
-    "pathToTab": "/hotelRoom/hotelFourSeaterRoom/tabBath.jpg",
-    "pathToDesk": "/hotelRoom/hotelFourSeaterRoom/deskBath.jpg",
-    "descr": "Bath in double luxury room"
+    "mob": "/hotelRoom/hotelFourSeaterRoom/mobBath.jpg",
+    "tab": "/hotelRoom/hotelFourSeaterRoom/tabBath.jpg",
+    "desk": "/hotelRoom/hotelFourSeaterRoom/deskBath.jpg",
+    "description": "Bath in double luxury room"
   }
 ]

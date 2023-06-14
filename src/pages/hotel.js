@@ -5,6 +5,12 @@ import AboutRoomSection from "@/components/AboutRoomSection";
 import doubleRoomImages from "data/hotelData/doubleRoomImages.json";
 import { doubleRoomTextInfo } from "data/hotelData/doubleRoomTextInfo";
 
+import tripleRoomImages from "data/hotelData/tripleRoomImages.json";
+import { tripleRoomTextInfo } from "data/hotelData/tripleRoomTextInfo";
+
+import hotelFourSeaterRoom from "data/hotelData/hotelFourSeaterRoom.json";
+import { hotelFourSeaterRoomTextInfo } from "data/hotelData/hotelFourSeaterRoomTextInfo";
+
 export default function Hotel() {
   return (
     <>
@@ -16,9 +22,17 @@ export default function Hotel() {
       </Head>
       <div className=" bg-[#F6F6F6]">
         <AboutRoomSection
-          // side
           data={doubleRoomImages}
           textInfo={doubleRoomTextInfo}
+        />
+        <AboutRoomSection
+          side
+          data={tripleRoomImages}
+          textInfo={tripleRoomTextInfo}
+        />
+        <AboutRoomSection
+          data={hotelFourSeaterRoom}
+          textInfo={hotelFourSeaterRoomTextInfo}
         />
       </div>
     </>
