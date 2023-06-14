@@ -1,4 +1,3 @@
-import Link from "next/link";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import IconsList from "../reusable/IconsList";
