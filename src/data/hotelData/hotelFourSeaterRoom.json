@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "pathToMob": "/hotelRoom/hotelFourSeaterRoom/mobKitchen.jpg",
+    "pathToTab": "/hotelRoom/hotelFourSeaterRoom/tabKitchen.jpg",
+    "pathToDesk": "/hotelRoom/hotelFourSeaterRoom/deskKitchen.jpg",
+    "descr": "Kitchen in double luxury room"
+  },
+  {
+    "id": 2,
+    "pathToMob": "/hotelRoom/hotelFourSeaterRoom/mobBed.jpg",
+    "pathToTab": "/hotelRoom/hotelFourSeaterRoom/tabBed.jpg",
+    "pathToDesk": "/hotelRoom/hotelFourSeaterRoom/deskBed.jpg",
+    "descr": "Bed in double luxury room"
+  },
+  {
+    "id": 3,
+    "pathToMob": "/hotelRoom/hotelFourSeaterRoom/mobBath.jpg",
+    "pathToTab": "/hotelRoom/hotelFourSeaterRoom/tabBath.jpg",
+    "pathToDesk": "/hotelRoom/hotelFourSeaterRoom/deskBath.jpg",
+    "descr": "Bath in double luxury room"
+  }
+]

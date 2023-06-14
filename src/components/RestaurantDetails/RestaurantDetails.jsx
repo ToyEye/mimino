@@ -3,7 +3,7 @@ import Container from "../reusable/Container";
 import Heading from "../reusable/Heading";
 import { TextDescription } from "../reusable/TextDescription";
 
-import images from "./images.json";
+import images from "data/mainSliderImages.json";
 import Slider from "../reusable/Swiper";
 
 const RestaurantDetails = () => {

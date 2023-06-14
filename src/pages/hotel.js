@@ -9,7 +9,7 @@ export default function Hotel() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className=" bg-[#F6F6F6] "></div>
+      <div className=" bg-[#F6F6F6]"></div>
     </>
   );
 }
