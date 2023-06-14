@@ -1,23 +1,23 @@
 [
   {
     "id": 1,
-    "pathToMob": "/hotelRoom/hotelTripleRoom/mobKitchen.jpg",
-    "pathToTab": "/hotelRoom/hotelTripleRoom/tabKitchen.jpg",
-    "pathToDesk": "/hotelRoom/hotelTripleRoom/deskKitchen.jpg",
-    "descr": "Kitchen in double luxury room"
+    "mob": "/hotelRoom/hotelTripleRoom/mobKitchen.jpg",
+    "tab": "/hotelRoom/hotelTripleRoom/tabKitchen.jpg",
+    "desk": "/hotelRoom/hotelTripleRoom/deskKitchen.jpg",
+    "description": "Kitchen in double luxury room"
   },
   {
     "id": 2,
-    "pathToMob": "/hotelRoom/hotelTripleRoom/mobBed.jpg",
-    "pathToTab": "/hotelRoom/hotelTripleRoom/tabBed.jpg",
-    "pathToDesk": "/hotelRoom/hotelTripleRoom/deskBed.jpg",
-    "descr": "Bed in double luxury room"
+    "mob": "/hotelRoom/hotelTripleRoom/mobBed.jpg",
+    "tab": "/hotelRoom/hotelTripleRoom/tabBed.jpg",
+    "desk": "/hotelRoom/hotelTripleRoom/deskBed.jpg",
+    "description": "Bed in double luxury room"
   },
   {
     "id": 3,
-    "pathToMob": "/hotelRoom/hotelTripleRoom/mobBath.jpg",
-    "pathToTab": "/hotelRoom/hotelTripleRoom/tabBath.jpg",
-    "pathToDesk": "/hotelRoom/hotelTripleRoom/deskBath.jpg",
-    "descr": "Bath in double luxury room"
+    "mob": "/hotelRoom/hotelTripleRoom/mobBath.jpg",
+    "tab": "/hotelRoom/hotelTripleRoom/tabBath.jpg",
+    "desk": "/hotelRoom/hotelTripleRoom/deskBath.jpg",
+    "description": "Bath in double luxury room"
   }
 ]
