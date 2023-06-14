@@ -31,7 +31,7 @@ const Header = ({ main }) => {
 
   const colorStyles = classNames(
     { "text-light bg-dark border-headerBorderLight": main },
-    { "text-dark bg-light border-headerBorderDark": !main }
+    { "text-dark bg-[#ffffff] border-headerBorderDark": !main }
   );
 
   const onShowMenu = () => {
