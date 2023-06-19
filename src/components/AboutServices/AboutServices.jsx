@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import Container from "../reusable/Container";
 import Heading from "../reusable/Heading";
 import { TextDescription } from "../reusable/TextDescription";
 import Slider from "@/components/reusable/Swiper";
 import useMediaRules from "helpers/useMediaRules";
+import BtnList from "../reusable/BtnList";
 
 const AboutServices = ({ images }) => {
   const [sizes, setSizes] = useState({
@@ -32,18 +33,19 @@ const AboutServices = ({ images }) => {
   }, [media]);
 
   return (
-    <section>
+    <section className="pt-10 md:pb-10 lg:pt-[30px] lg:pb-12">
       <Container>
         <div className="flex flex-col lg:flex-row">
           <div className="w-1/2">
             <Heading
               tag="h1"
               text="hotel"
-              className="text-[40px] leading-10 md:text-[80px] md:leading-[80px]  lg:text-[90px] lg:leading-[90px] uppercase -tracking-[0.02em]"
+              className="text-[40px] mb-6 leading-10 md:mb-8 md:text-[80px] md:leading-[80px]  lg:text-[90px] lg:leading-[90px] uppercase -tracking-[0.02em] lg:pt-[174px]"
             />
+            <BtnList />
             <TextDescription
               text="Whether you're in the mood for a hearty breakfast, a light lunch, or a romantic dinner, our menu has something for everyone."
-              className="text-sm leading-[18px] tracking-wider  w-[338px] "
+              className="hidden text-sm leading-[18px] tracking-wider  w-[338px] lg:block "
             />
           </div>
           <Slider
@@ -51,6 +53,11 @@ const AboutServices = ({ images }) => {
             slidesPerView={slidesPerView}
             sizes={sizes}
             className="lg:w-1/2"
+          />
+
+          <TextDescription
+            text="Whether you're in the mood for a hearty breakfast, a light lunch, or a romantic dinner, our menu has something for everyone."
+            className="mt-[100px] text-sm leading-[18px] tracking-wider  w-[338px] lg:hidden "
           />
         </div>
       </Container>
