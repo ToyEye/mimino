@@ -1,5 +1,6 @@
 import Head from "next/head";
 
+import AboutServices from "@/components/AboutServices";
 import AboutRoomSection from "@/components/AboutRoomSection";
 
 import doubleRoomImages from "data/hotelData/doubleRoomImages.json";
@@ -11,6 +12,8 @@ import { tripleRoomTextInfo } from "data/hotelData/tripleRoomTextInfo";
 import hotelFourSeaterRoom from "data/hotelData/hotelFourSeaterRoom.json";
 import { hotelFourSeaterRoomTextInfo } from "data/hotelData/hotelFourSeaterRoomTextInfo";
 
+import hotelSliderImages from "data/hotelData/hotelSliderImages.json";
+
 export default function Hotel() {
   return (
     <>
@@ -21,6 +24,7 @@ export default function Hotel() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className=" bg-[#F6F6F6]">
+        <AboutServices images={hotelSliderImages} />
         <AboutRoomSection
           data={doubleRoomImages}
           textInfo={doubleRoomTextInfo}

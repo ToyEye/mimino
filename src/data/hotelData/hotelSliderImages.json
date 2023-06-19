@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "pathToMob": "/hotelRoom/hotelSlider/mobLeftView.jpg",
+    "pathToTab": "/hotelRoom/hotelSlider/tabLeftView.jpg",
+    "pathToDesk": "/hotelRoom/hotelSlider/deskLeftView.jpg",
+    "descr": "Hotel left side view"
+  },
+  {
+    "id": 2,
+    "pathToMob": "/hotelRoom/hotelSlider/mobCenterView.jpg",
+    "pathToTab": "/hotelRoom/hotelSlider/tabCenterView.jpg",
+    "pathToDesk": "/hotelRoom/hotelSlider/deskCenterView.jpg",
+
+    "descr": "Hotel central view"
+  },
+  {
+    "id": 3,
+    "pathToMob": "/hotelRoom/hotelSlider/mobRightView.jpg",
+    "pathToTab": "/hotelRoom/hotelSlider/tabRightView.jpg",
+    "pathToDesk": "/hotelRoom/hotelSlider/deskRightView.jpg",
+    "descr": "Hotel right side view"
+  }
+]
