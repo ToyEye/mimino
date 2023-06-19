@@ -9,32 +9,37 @@ import "swiper/css/navigation";
 
 import useMediaRules from "helpers/useMediaRules";
 
-export const Slider = ({ images, className }) => {
+export const Slider = ({ images, className, sizes, slidesPerView, loop }) => {
   const media = useMediaRules();
 
   return (
-    <div className="relative">
+    <div className={`relative ${className}`}>
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
         className="mySwiper"
-        loop={true}
+        loop={loop}
         navigation={{
           nextEl: ".next-slider",
           prevEl: ".prev-slider",
         }}
         modules={[Navigation]}
         breakpoints={{
-          320: { slidesPerView: 2, spaceBetween: 20 },
-          768: { slidesPerView: 2, spaceBetween: 32 },
-          1440: { slidesPerView: 4.85, spaceBetween: 20 },
+          320: { slidesPerView: slidesPerView.mob, spaceBetween: 20 },
+          768: { slidesPerView: slidesPerView.tab, spaceBetween: 32 },
+          1440: { slidesPerView: slidesPerView.desk, spaceBetween: 20 },
         }}
       >
         {images.map(({ id, pathToMob, pathToTab, pathToDesk, descr }) => {
           if (media === "mobile" && pathToMob) {
             return (
               <SwiperSlide key={id} className={className}>
-                <Image src={pathToMob} alt={descr} width={157} height={201} />
+                <Image
+                  src={pathToMob}
+                  alt={descr}
+                  width={sizes.width}
+                  height={sizes.height}
+                />
               </SwiperSlide>
             );
           }
@@ -42,7 +47,12 @@ export const Slider = ({ images, className }) => {
           if (media === "tablet" && pathToTab) {
             return (
               <SwiperSlide key={id} className={className}>
-                <Image src={pathToTab} alt={descr} width={366} height={309} />
+                <Image
+                  src={pathToTab}
+                  alt={descr}
+                  width={sizes.width}
+                  height={sizes.height}
+                />
               </SwiperSlide>
             );
           }
@@ -50,7 +60,12 @@ export const Slider = ({ images, className }) => {
           if (media === "desktop" && pathToDesk) {
             return (
               <SwiperSlide key={id} className={className}>
-                <Image src={pathToDesk} alt={descr} width={266} height={309} />
+                <Image
+                  src={pathToDesk}
+                  alt={descr}
+                  width={sizes.width}
+                  height={sizes.height}
+                />
               </SwiperSlide>
             );
           }
