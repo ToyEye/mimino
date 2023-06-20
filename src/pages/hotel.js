@@ -24,7 +24,7 @@ export default function Hotel() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className=" bg-[#F6F6F6]">
-        <AboutServices images={hotelSliderImages} />
+        <AboutServices images={hotelSliderImages} title="hotel" />
         <AboutRoomSection
           data={doubleRoomImages}
           textInfo={doubleRoomTextInfo}

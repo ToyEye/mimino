@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "pathToMob": "/restaurant/slider/mobTable.jpg",
+    "pathToTab": "/restaurant/slider/tabTable.jpg",
+    "pathToDesk": "/restaurant/slider/deskTable.jpg",
+    "descr": "Free table for two"
+  },
+  {
+    "id": 2,
+    "pathToMob": "/restaurant/slider/mobDish.jpg",
+    "pathToTab": "/restaurant/slider/tabDish.jpg",
+    "pathToDesk": "/restaurant/slider/deskDish.jpg",
+
+    "descr": "Fish dish"
+  },
+  {
+    "id": 3,
+    "pathToMob": "/restaurant/slider/mobCook.jpg",
+    "pathToTab": "/restaurant/slider/tabCook.jpg",
+    "pathToDesk": "/restaurant/slider/deskCook.jpg",
+    "descr": "Chief at work"
+  }
+]
