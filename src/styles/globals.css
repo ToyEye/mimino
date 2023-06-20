@@ -93,10 +93,6 @@ a {
   transform: translateX(55px);
 }
 
-.swiper-button-disabled {
-  color: #1212124d;
-}
-
 @media screen and (min-width: 1440px) {
   .prev-slider,
   .next-slider {
@@ -114,4 +110,8 @@ a {
   .next-slider {
     transform: translateX(25px);
   }
+}
+
+.swiper-button-disabled {
+  color: #1212124d;
 }

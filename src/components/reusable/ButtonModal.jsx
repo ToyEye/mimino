@@ -4,7 +4,7 @@ const ButtonModal = ({ text, className = "", openModal }) => {
   return (
     <button
       type="button"
-      className={`${className} transition uppercase leading-[18px] text-sm border py-2 px-[18px] rounded-[32px]`}
+      className={`${className} -tracking-[0.02em] transition uppercase leading-[18px] text-sm border py-2 px-[18px] rounded-[32px] md:leading-[24px] lg:text-lg lg:leading-[24px]`}
       onClick={openModal}
     >
       {text}

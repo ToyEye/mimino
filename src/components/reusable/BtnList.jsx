@@ -21,15 +21,19 @@ const BtnList = ({
   );
 
   return (
-    <div className={`${className} flex gap-[14px]`}>
-      <ButtonModal text={textModal} className={btnTheme} />
-      <ButtonLink
-        text={textLink}
-        className={btnTheme}
-        path={path}
-        openModal={openModal}
-      />
-    </div>
+    <ul className={`${className} flex gap-[14px]`}>
+      <li>
+        <ButtonModal text={textModal} className={btnTheme} />
+      </li>
+      <li>
+        <ButtonLink
+          text={textLink}
+          className={btnTheme}
+          path={path}
+          openModal={openModal}
+        />
+      </li>
+    </ul>
   );
 };
 
