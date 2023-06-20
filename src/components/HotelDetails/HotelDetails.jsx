@@ -7,8 +7,6 @@ import { TextDescription } from "../reusable/TextDescription";
 import BtnList from "../reusable/BtnList";
 import useMediaRules from "helpers/useMediaRules";
 
-import { hotelDetailsData } from "./hotelDetailsData";
-
 const initialState = {
   bathImg: "bathSq",
   washbasin: "washbasinSq",
@@ -46,7 +44,10 @@ const HotelDetails = () => {
           </div>
 
           <BtnList
-            data={hotelDetailsData}
+            textModal="book a room"
+            textLink="view rooms"
+            path="hotel"
+            // openModal
             className="hidden justify-center   lg:flex ml-auto  "
           />
         </div>
@@ -95,7 +96,10 @@ const HotelDetails = () => {
           </div>
         </div>
         <BtnList
-          data={hotelDetailsData}
+          textModal="book a room"
+          textLink="view rooms"
+          path="hotel"
+          // openModal
           className="justify-center mt-20 md:mt-10 lg:hidden "
         />
       </Container>
