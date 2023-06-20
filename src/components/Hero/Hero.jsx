@@ -2,12 +2,7 @@ import Container from "../reusable/Container";
 import Heading from "../reusable/Heading";
 import { TextDescription } from "../reusable/TextDescription";
 
-import BtnList from "../reusable/BtnList";
-import {
-  heroBtnData,
-  mainHeroFirstTextDescr,
-  mainHeroSecondTextDescr,
-} from "./heroData";
+import ButtonModal from "../reusable/ButtonModal";
 
 const Hero = () => {
   return (
@@ -20,16 +15,25 @@ const Hero = () => {
         />
 
         <div className="flex flex-col gap-[66px] md:gap-[86px] lg:gap-[275px] lg:flex-row-reverse md:justify-end ">
-          <BtnList data={heroBtnData} className="justify-center" />
+          <div className="flex gap-[14px] justify-center">
+            <ButtonModal
+              text="book a room"
+              className="text-light  border-light hover:text-dark hover:bg-light lg:h-[42px]"
+            />
+            <ButtonModal
+              text="book  a table"
+              className="text-light  border-light hover:text-dark hover:bg-light lg:h-[42px]"
+            />
+          </div>
           <div className="flex flex-col gap-8 text-sm text-light leading-[18px] tracking-[0.05em] md:flex-row md:justify-center ">
             <TextDescription
               className=" w-[338px]"
-              text={mainHeroFirstTextDescr}
+              text="Whether you're in the mood for a hearty breakfast, a light lunch, or a romantic dinner, our menu has something for everyone."
             />
 
             <TextDescription
               className=" w-[338px]"
-              text={mainHeroSecondTextDescr}
+              text="At Hotel Mimino, we believe that great food should be available to everyone, no matter the time of day."
             />
           </div>
         </div>
