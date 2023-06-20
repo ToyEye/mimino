@@ -8,7 +8,7 @@ import useMediaRules from "helpers/useMediaRules";
 
 import ButtonModal from "../reusable/ButtonModal";
 
-const AboutServices = ({ images }) => {
+const AboutServices = ({ images, title }) => {
   const [sizes, setSizes] = useState({
     width: 250,
     height: 429,
@@ -40,7 +40,7 @@ const AboutServices = ({ images }) => {
           <div className="mb-10 md:mb-[54px] lg:mb-0 lg:w-1/2 lg:flex lg:flex-col">
             <Heading
               tag="h1"
-              text="hotel"
+              text={title}
               className="text-[40px] mb-6 leading-10 md:mb-8 md:text-[80px] md:leading-[80px]  lg:text-[90px] lg:leading-[90px] uppercase -tracking-[0.02em] lg:pt-[174px]"
             />
             <div className="flex gap-[14px]">
