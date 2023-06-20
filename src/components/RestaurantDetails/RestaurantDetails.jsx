@@ -52,7 +52,7 @@ const RestaurantDetails = () => {
             textLink="View the menu"
             theme="dark"
             className="hidden lg:flex lg:ml-auto"
-            path=""
+            path="/restaurant"
             // openModal
           />
         </div>
