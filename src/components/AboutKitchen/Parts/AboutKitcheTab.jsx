@@ -1,15 +1,34 @@
 import Image from "next/image";
 import { TextDescription } from "components/reusable/TextDescription";
 
-const AboutKitcheTab = ({ images }) => {
+const AboutKitcheTab = () => {
   return (
     <>
       <ul className="flex flex-wrap gap-5 ">
-        {images.map(({ id, description, tab: { path, height, width } }) => (
-          <li key={id}>
-            <Image src={path} alt={description} width={width} height={height} />
-          </li>
-        ))}
+        <li>
+          <Image
+            src="/restaurant/aboutKitchen/tabChef.jpg"
+            alt=""
+            width={388}
+            height={515}
+          />
+        </li>
+        <li>
+          <Image
+            src="/restaurant/aboutKitchen/tabMeat.jpg"
+            alt=""
+            width={284}
+            height={296}
+          />
+        </li>
+        <li>
+          <Image
+            src="/restaurant/aboutKitchen/tabCoctail.jpg"
+            alt=""
+            width={284}
+            height={203}
+          />
+        </li>
       </ul>
       <ul className="lg:hidden">
         <li>
