@@ -1,10 +1,12 @@
-import Image from "next/image";
 import Media from "react-media";
 
 import Container from "../reusable/Container";
-import { TextDescription } from "../reusable/TextDescription";
+
 import AboutKitcheMob from "./Parts/AboutKitcheMob";
 import AboutKitcheTab from "./Parts/AboutKitcheTab";
+import AboutKitcheDesk from "./Parts/AboutKitchenDesk";
+
+import restaurant from "data/restauranData/restaurant.json";
 
 const AboutKitchen = () => {
   return (
@@ -20,21 +22,12 @@ const AboutKitchen = () => {
           >
             {(matches) => (
               <>
-                {matches.small && <AboutKitcheMob />}
-                {matches.medium && <AboutKitcheTab />}
-                {matches.large && <AboutKitcheMob />}
+                {matches.small && <AboutKitcheMob images={restaurant} />}
+                {matches.medium && <AboutKitcheTab images={restaurant} />}
+                {matches.large && <AboutKitcheDesk images={restaurant} />}
               </>
             )}
           </Media>
-
-          <ul className="lg:hidden">
-            <li>
-              <TextDescription text="At Mimino, we are experts in meat preparation. Our chefs use only the finest and freshest ingredients to create delicious dishes that showcase the flavors of premium cuts of meat." />
-            </li>
-            <li>
-              <TextDescription text="Our slow-cooking process and expert seasoning bring out the best in each dish, making for an unforgettable dining experience. Come taste the magic of meat preparation at Mimino." />
-            </li>
-          </ul>
         </div>
       </Container>
     </section>
