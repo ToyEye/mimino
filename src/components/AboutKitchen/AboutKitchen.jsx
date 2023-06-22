@@ -8,12 +8,16 @@ import AboutKitcheDesk from "./Parts/AboutKitchenDesk";
 
 import restaurant from "data/restauranData/restaurant.json";
 
+import dynamic from "next/dynamic";
+
+const MediaComponent = dynamic(() => import("react-media"), { ssr: false });
+
 const AboutKitchen = () => {
   return (
     <section className="py-16 md:py-20 lg:py-[100px] ">
       <Container>
         <div>
-          <Media
+          <MediaComponent
             queries={{
               small: "(max-width: 767px)",
               medium: "(min-width: 768px) and (max-width: 1439px)",
@@ -27,7 +31,10 @@ const AboutKitchen = () => {
                 {matches.large && <AboutKitcheDesk images={restaurant} />}
               </>
             )}
-          </Media>
+          </MediaComponent>
+          {/* <AboutKitcheMob />
+          <AboutKitcheTab />
+          <AboutKitcheDesk /> */}
         </div>
       </Container>
     </section>
