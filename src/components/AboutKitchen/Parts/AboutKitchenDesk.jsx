@@ -5,11 +5,18 @@ const AboutKitcheDesk = ({ images }) => {
   return (
     <>
       <ul className="flex gap-8 ">
-        {images.map(({ id, description, desk: { path, height, width } }) => (
-          <li key={id}>
-            <Image src={path} alt={description} width={width} height={height} />
-          </li>
-        ))}
+        {images.map(({ id, description, desk: { path, height, width } }) => {
+          return (
+            <li key={id}>
+              <Image
+                src={path}
+                alt={description}
+                width={width}
+                height={height}
+              />
+            </li>
+          );
+        })}
       </ul>
     </>
   );
