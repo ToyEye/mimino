@@ -5,7 +5,8 @@ const AboutKitcheDesk = ({ images }) => {
   return (
     <>
       <ul className="flex gap-8 ">
-        {images.map(({ id, description, desk: { path, height, width } }) => {
+        {images.map(({ id, description, path, desk: { height, width } }) => {
+          console.log(path);
           return (
             <li key={id}>
               <Image
