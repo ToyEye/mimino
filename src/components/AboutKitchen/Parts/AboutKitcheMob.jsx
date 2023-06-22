@@ -1,34 +1,15 @@
 import Image from "next/image";
 import { TextDescription } from "components/reusable/TextDescription";
 
-const AboutKitcheMob = () => {
+const AboutKitcheMob = ({ images }) => {
   return (
     <>
       <ul className="flex flex-wrap gap-5 ">
-        <li>
-          <Image
-            src="/restaurant/aboutKitchen/mobChef.jpg"
-            alt=""
-            width={335}
-            height={443}
-          />
-        </li>
-        <li>
-          <Image
-            src="/restaurant/aboutKitchen/mobMeat.jpg"
-            alt=""
-            width={158}
-            height={149}
-          />
-        </li>
-        <li>
-          <Image
-            src="/restaurant/aboutKitchen/mobCoctail.jpg"
-            alt=""
-            width={157}
-            height={149}
-          />
-        </li>
+        {images.map(({ id, description, mob: { path, height, width } }) => (
+          <li key={id}>
+            <Image src={path} alt={description} width={width} height={height} />
+          </li>
+        ))}
       </ul>
       <ul className="lg:hidden">
         <li>

@@ -33,7 +33,8 @@
     "desk": {
       "path": "/restaurant/aboutKitchen/deskMeat.jpg",
       "height": 389,
-      "width": 334
+      "width": 334,
+      "text": "At Mimino, we are experts in meat preparation. Our chefs use only the finest and freshest ingredients to create delicious dishes that showcase the flavors of premium cuts of meat."
     },
     "description": "Meat"
   },
@@ -53,7 +54,8 @@
     "desk": {
       "path": "/restaurant/aboutKitchen/deskCoctail.jpg",
       "height": 389,
-      "width": 467
+      "width": 467,
+      "text": "Our slow-cooking process and expert seasoning bring out the best in each dish, making for an unforgettable dining experience. Come taste the magic of meat preparation at Mimino."
     },
     "description": "Ice Coctail"
   }
