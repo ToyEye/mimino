@@ -1,6 +1,7 @@
 import Head from "next/head";
 
-import AboutServices from "@/components/AboutServices/AboutServices";
+import AboutServices from "@/components/AboutServices";
+import AboutKitchen from "@/components/AboutKitchen";
 
 import restaurantSliderImages from "data/restauranData/restauranSliderImages.json";
 
@@ -15,6 +16,7 @@ const Restaurant = () => {
       </Head>
       <div className=" bg-[#F6F6F6]">
         <AboutServices title="Restaurant" images={restaurantSliderImages} />
+        <AboutKitchen />
       </div>
     </>
   );
