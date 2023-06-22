@@ -2,18 +2,17 @@
   {
     "id": 1,
     "mob": {
-      "path": "/restaurant/aboutKitchen/mobChef.jpg ",
+      "path": "/restaurant/aboutKitchen/mobChef.jpg",
       "height": 443,
       "width": 335
     },
-    "path": "/restaurant/aboutKitchen/mobChef.jpg ",
     "tab": {
-      "path": "/restaurant/aboutKitchen/tabChef.jpg ",
+      "path": "/restaurant/aboutKitchen/tabChef.jpg",
       "height": 515,
       "width": 388
     },
     "desk": {
-      "path": "/restaurant/aboutKitchen/deskChef.jpg ",
+      "path": "/restaurant/aboutKitchen/deskChef.jpg",
       "height": 598,
       "width": 511
     },
@@ -22,17 +21,17 @@
   {
     "id": 2,
     "mob": {
-      "path": "/restaurant/aboutKitchen/mobMeat.jpg ",
+      "path": "/restaurant/aboutKitchen/mobMeat.jpg",
       "height": 149,
       "width": 158
     },
     "tab": {
-      "path": "/restaurant/aboutKitchen/tabMeat.jpg ",
+      "path": "/restaurant/aboutKitchen/tabMeat.jpg",
       "height": 296,
       "width": 284
     },
     "desk": {
-      "path": "/restaurant/aboutKitchen/deskMeat.jpg ",
+      "path": "/restaurant/aboutKitchen/deskMeat.jpg",
       "height": 389,
       "width": 334
     },
@@ -41,18 +40,18 @@
   {
     "id": 3,
     "mob": {
-      "path": "/restaurant/aboutKitchen/mobCoctail.jpg ",
+      "path": "/restaurant/aboutKitchen/mobCoctail.jpg",
       "height": 149,
       "width": 157
     },
 
     "tab": {
-      "path": "/restaurant/aboutKitchen/tabCoctail.jpg ",
+      "path": "/restaurant/aboutKitchen/tabCoctail.jpg",
       "height": 203,
       "width": 284
     },
     "desk": {
-      "path": "/restaurant/aboutKitchen/deskCoctail.jpg ",
+      "path": "/restaurant/aboutKitchen/deskCoctail.jpg",
       "height": 389,
       "width": 467
     },
