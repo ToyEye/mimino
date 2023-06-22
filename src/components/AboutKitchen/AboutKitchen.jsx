@@ -32,9 +32,6 @@ const AboutKitchen = () => {
               </>
             )}
           </MediaComponent>
-          {/* <AboutKitcheMob />
-          <AboutKitcheTab />
-          <AboutKitcheDesk /> */}
         </div>
       </Container>
     </section>
