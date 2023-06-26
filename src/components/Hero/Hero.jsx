@@ -1,10 +1,18 @@
+import { useState } from "react";
 import Container from "../reusable/Container";
 import Heading from "../reusable/Heading";
 import { TextDescription } from "../reusable/TextDescription";
 
 import ButtonModal from "../reusable/ButtonModal";
+import BookTableModal from "../Modals/BookTableModal";
 
 const Hero = () => {
+  const [showTableModal, setShowTableModal] = useState(false);
+
+  const toggleModal = () => {
+    setShowTableModal(!showTableModal);
+  };
+
   return (
     <section className="bg-dark pt-[429px] pb-10 md:pt-[528px] md:pb-[38px] lg:pt-[196px] lg:pb-[48px]">
       <Container className="pr-[17px] md:pr-8">
@@ -22,6 +30,7 @@ const Hero = () => {
             />
             <ButtonModal
               text="book  a table"
+              openModal={toggleModal}
               className="text-light  border-light hover:text-dark hover:bg-light lg:h-[42px]"
             />
           </div>
@@ -38,6 +47,7 @@ const Hero = () => {
           </div>
         </div>
       </Container>
+      {showTableModal && <BookTableModal onClose={toggleModal} />}
     </section>
   );
 };
