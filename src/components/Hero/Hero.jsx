@@ -9,8 +9,19 @@ import BookTableModal from "../Modals/BookTableModal";
 const Hero = () => {
   const [showTableModal, setShowTableModal] = useState(false);
 
-  const toggleModal = () => {
-    setShowTableModal(!showTableModal);
+  const toggleModal = (evt) => {
+    const { name } = evt.currentTarget;
+
+    switch (name) {
+      case "table":
+        setShowTableModal(!showTableModal);
+        break;
+
+      default:
+        setShowTableModal(false);
+
+        break;
+    }
   };
 
   return (
@@ -31,6 +42,7 @@ const Hero = () => {
             <ButtonModal
               text="book  a table"
               openModal={toggleModal}
+              name="table"
               className="text-light  border-light hover:text-dark hover:bg-light lg:h-[42px]"
             />
           </div>
