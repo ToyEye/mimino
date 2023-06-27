@@ -3,6 +3,7 @@ import { useState } from "react";
 export const useModalOpen = () => {
   const [showTableModal, setShowTableModal] = useState(false);
   const [showRoomModal, setShowRoomModal] = useState(false);
+  const [showPriceModal, setShowPriceModal] = useState(false);
 
   const toggleModal = (evt) => {
     const { name } = evt.currentTarget;
@@ -16,6 +17,10 @@ export const useModalOpen = () => {
         setShowRoomModal(!showRoomModal);
         break;
 
+      case "price":
+        setShowPriceModal(!showPriceModal);
+        break;
+
       default:
         setShowTableModal(false);
 
@@ -23,5 +28,5 @@ export const useModalOpen = () => {
     }
   };
 
-  return { showTableModal, showRoomModal, toggleModal };
+  return { showTableModal, showRoomModal, showPriceModal, toggleModal };
 };

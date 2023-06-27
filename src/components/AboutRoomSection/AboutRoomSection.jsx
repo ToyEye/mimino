@@ -6,15 +6,19 @@ import { TextDescription } from "../reusable/TextDescription";
 import AboutRoomList from "../AboutRoomList/AboutRoomList";
 import Container from "../reusable/Container";
 import BtnList from "../reusable/BtnList";
+import PricePerRoomModal from "../Modals/PricePerRoomModal";
+import { useModalOpen } from "@/hooks/useModalOpen";
 
 const AboutRoomSection = ({ data, textInfo, side }) => {
+  const { showPriceModal, toggleModal } = useModalOpen();
+
   const textside = classNames({ "flex-row-reverse": side });
   return (
     <section className="pt-16 md:pt-20 lg:pt-[100px]">
       <Container>
         <AboutRoomList images={data} side={side} />
         <div
-          className={`lg:flex lg:${textside} lg:justify-between mt-8 md:mt-10`}
+          className={`flex flex-col gap-7 lg:flex-row lg:${textside} lg:justify-between mt-8 md:mt-10`}
         >
           <div className="lg:flex lg:flex-col ">
             <Heading
@@ -34,14 +38,18 @@ const AboutRoomSection = ({ data, textInfo, side }) => {
             </div>
           </div>
           <BtnList
-            textModal="More details"
-            textLink="View prices"
+            textModal="View prices"
+            textLink="More details"
             theme="dark"
             path="/room"
-            // openModal
+            openModal={toggleModal}
+            name="price"
           />
         </div>
       </Container>
+      {showPriceModal && (
+        <PricePerRoomModal room={textInfo.heading} onClose={toggleModal} />
+      )}
     </section>
   );
 };
