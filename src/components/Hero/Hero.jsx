@@ -1,28 +1,14 @@
-import { useState } from "react";
 import Container from "../reusable/Container";
 import Heading from "../reusable/Heading";
 import { TextDescription } from "../reusable/TextDescription";
 
 import ButtonModal from "../reusable/ButtonModal";
 import BookTableModal from "../Modals/BookTableModal";
+import BookRoomModal from "../Modals/BookRoomModal";
+import { useModalOpen } from "@/hooks/useModalOpen";
 
 const Hero = () => {
-  const [showTableModal, setShowTableModal] = useState(false);
-
-  const toggleModal = (evt) => {
-    const { name } = evt.currentTarget;
-
-    switch (name) {
-      case "table":
-        setShowTableModal(!showTableModal);
-        break;
-
-      default:
-        setShowTableModal(false);
-
-        break;
-    }
-  };
+  const { showTableModal, showRoomModal, toggleModal } = useModalOpen();
 
   return (
     <section className="bg-dark pt-[429px] pb-10 md:pt-[528px] md:pb-[38px] lg:pt-[196px] lg:pb-[48px]">
@@ -36,6 +22,8 @@ const Hero = () => {
         <div className="flex flex-col gap-[66px] md:gap-[86px] lg:gap-[275px] lg:flex-row-reverse md:justify-end ">
           <div className="flex gap-[14px] justify-center">
             <ButtonModal
+              openModal={toggleModal}
+              name="room"
               text="book a room"
               className="text-light  border-light hover:text-dark hover:bg-light lg:h-[42px]"
             />
@@ -60,6 +48,7 @@ const Hero = () => {
         </div>
       </Container>
       {showTableModal && <BookTableModal onClose={toggleModal} />}
+      {showRoomModal && <BookRoomModal onClose={toggleModal} />}
     </section>
   );
 };

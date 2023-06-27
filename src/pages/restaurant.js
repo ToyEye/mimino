@@ -15,7 +15,7 @@ const Restaurant = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className=" bg-[#F6F6F6]">
-        <AboutServices title="Restaurant" images={restaurantSliderImages} />
+        <AboutServices title="restaurant" images={restaurantSliderImages} />
         <AboutKitchen />
       </div>
     </>

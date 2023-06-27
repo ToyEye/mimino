@@ -7,8 +7,12 @@ import Slider from "@/components/reusable/Swiper";
 import useMediaRules from "helpers/useMediaRules";
 
 import ButtonModal from "../reusable/ButtonModal";
+import BookTableModal from "../Modals/BookTableModal";
+import { useModalOpen } from "@/hooks/useModalOpen";
 
 const AboutServices = ({ images, title }) => {
+  const { showTableModal, toggleModal } = useModalOpen();
+
   const [sizes, setSizes] = useState({
     width: 250,
     height: 429,
@@ -44,7 +48,21 @@ const AboutServices = ({ images, title }) => {
               className="text-[40px] mb-6 leading-10 md:mb-8 md:text-[80px] md:leading-[80px]  lg:text-[90px] lg:leading-[90px] uppercase -tracking-[0.02em] lg:pt-[174px]"
             />
             <div className="flex gap-[14px]">
-              <ButtonModal text="Book a Room" className="" openModal />
+              {title === "hotel" ? (
+                <ButtonModal
+                  text="Book a Room"
+                  className=""
+                  openModal
+                  name="room"
+                />
+              ) : (
+                <ButtonModal
+                  text="Book a Table"
+                  className=""
+                  openModal={toggleModal}
+                  name="table"
+                />
+              )}
               <ButtonModal text="View prices" className="" openModal />
             </div>
             <TextDescription
@@ -65,6 +83,7 @@ const AboutServices = ({ images, title }) => {
           />
         </div>
       </Container>
+      {showTableModal && <BookTableModal onClose={toggleModal} />}
     </section>
   );
 };

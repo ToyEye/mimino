@@ -7,8 +7,12 @@ import images from "data/mainSliderImages.json";
 import Slider from "../reusable/Swiper";
 import useMediaRules from "helpers/useMediaRules";
 import BtnList from "../reusable/BtnList";
+import BookTableModal from "../Modals/BookTableModal";
+import { useModalOpen } from "@/hooks/useModalOpen";
 
 const RestaurantDetails = () => {
+  const { showTableModal, toggleModal } = useModalOpen();
+
   const [sizes, setSizes] = useState({
     width: 157,
     height: 201,
@@ -51,9 +55,10 @@ const RestaurantDetails = () => {
             textModal="book a table"
             textLink="View the menu"
             theme="dark"
+            name="table"
             className="hidden lg:flex lg:ml-auto"
             path="/restaurant"
-            // openModal
+            openModal={toggleModal}
           />
         </div>
         <Slider
@@ -69,10 +74,12 @@ const RestaurantDetails = () => {
           textLink="View the menu"
           theme="dark"
           className="mt-[82px] md:mt-[108px] justify-center lg:hidden"
-          path=""
-          // openModal
+          path="/restaurant"
+          name="table"
+          openModal={toggleModal}
         />
       </Container>
+      {showTableModal && <BookTableModal onClose={toggleModal} />}
     </section>
   );
 };
