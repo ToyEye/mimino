@@ -6,6 +6,8 @@ import Heading from "../reusable/Heading";
 import { TextDescription } from "../reusable/TextDescription";
 import BtnList from "../reusable/BtnList";
 import useMediaRules from "helpers/useMediaRules";
+import BookRoomModal from "../Modals/BookRoomModal";
+import { useModalOpen } from "@/hooks/useModalOpen";
 
 const initialState = {
   bathImg: "bathSq",
@@ -13,6 +15,8 @@ const initialState = {
 };
 
 const HotelDetails = () => {
+  const { showRoomModal, toggleModal } = useModalOpen();
+
   const [images, setImages] = useState(initialState);
 
   const media = useMediaRules();
@@ -46,8 +50,9 @@ const HotelDetails = () => {
           <BtnList
             textModal="book a room"
             textLink="view rooms"
-            path="hotel"
-            // openModal
+            path="/hotel"
+            name="room"
+            openModal={toggleModal}
             className="hidden justify-center   lg:flex ml-auto  "
           />
         </div>
@@ -98,11 +103,13 @@ const HotelDetails = () => {
         <BtnList
           textModal="book a room"
           textLink="view rooms"
-          path="hotel"
-          // openModal
+          path="/hotel"
+          name="room"
+          openModal={toggleModal}
           className="justify-center mt-20 md:mt-10 lg:hidden "
         />
       </Container>
+      {showRoomModal && <BookRoomModal onClose={toggleModal} />}
     </section>
   );
 };

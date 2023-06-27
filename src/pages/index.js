@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { Toaster } from "react-hot-toast";
 
 import Hero from "@/components/Hero/Hero";
 import RestaurantHotelComplex from "@/components/RestaurantHotelComplex";
@@ -23,6 +24,7 @@ export default function Home() {
       <RestaurantDetails />
       <AboutLuxary />
       <HotelDetails />
+      <Toaster />
     </>
   );
 }

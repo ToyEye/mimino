@@ -11,6 +11,7 @@ const BtnList = ({
   className,
   path,
   openModal,
+  name,
 }) => {
   const btnTheme = classNames(
     {
@@ -23,7 +24,12 @@ const BtnList = ({
   return (
     <ul className={`${className} flex gap-[14px]`}>
       <li>
-        <ButtonModal text={textModal} className={btnTheme} />
+        <ButtonModal
+          text={textModal}
+          className={btnTheme}
+          name={name}
+          openModal={openModal}
+        />
       </li>
       <li>
         <ButtonLink
