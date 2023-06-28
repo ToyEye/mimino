@@ -1,0 +1,20 @@
+{
+  "title": "Drinks",
+  "menuList": [
+    {
+      "id": 1,
+      "dish": "Black/green tea",
+      "price": "100 UAH"
+    },
+    {
+      "id": 2,
+      "dish": "Espresso",
+      "price": "100 UAH"
+    },
+    {
+      "id": 3,
+      "dish": "Cappuccino",
+      "price": "100 UAH"
+    }
+  ]
+}

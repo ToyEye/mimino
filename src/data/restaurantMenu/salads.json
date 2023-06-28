@@ -1,0 +1,33 @@
+{
+  "title": "Salads",
+  "menuList": [
+    {
+      "id": 1,
+      "dish": "Caesar with chicken",
+      "ingredients": "Chicken fillet, lettuce, cherry tomatoes, Parmesan cheese, croutons, Caesar sauce",
+      "weight": "230 g",
+      "price": "450 UAH"
+    },
+    {
+      "id": 2,
+      "dish": "Caesar with shrimp",
+      "ingredients": "Tiger shrimp, lettuce, cherry tomatoes, parmesan cheese, croutons, caesar sauce",
+      "weight": "230 g",
+      "price": "300 UAH"
+    },
+    {
+      "id": 3,
+      "dish": "Greek salad",
+      "ingredients": "Fresh cucumber, tomato, bell pepper, olives, brynza cheese, lettuce, sauce",
+      "weight": "230 g",
+      "price": "280 UAH"
+    },
+    {
+      "id": 4,
+      "dish": "Meat salad",
+      "ingredients": "Chicken fillet or pork tenderloin, fresh cucumber, tomato, bell pepper, ranch sauce",
+      "weight": "230 g",
+      "price": "300 UAH"
+    }
+  ]
+}

@@ -4,6 +4,7 @@ import AboutServices from "@/components/AboutServices";
 import AboutKitchen from "@/components/AboutKitchen";
 
 import restaurantSliderImages from "data/restauranData/restauranSliderImages.json";
+import RestaurantMenu from "@/components/RestaurantMenu";
 
 const Restaurant = () => {
   return (
@@ -17,6 +18,7 @@ const Restaurant = () => {
       <div className=" bg-[#F6F6F6]">
         <AboutServices title="restaurant" images={restaurantSliderImages} />
         <AboutKitchen />
+        <RestaurantMenu />
       </div>
     </>
   );

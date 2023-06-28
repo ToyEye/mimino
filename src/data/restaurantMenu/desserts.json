@@ -1,0 +1,20 @@
+{
+  "title": "Desserts",
+  "menuList": [
+    {
+      "id": 1,
+      "dish": "Napoleon cake",
+      "price": "200 UAH"
+    },
+    {
+      "id": 2,
+      "dish": "Poppy cake",
+      "price": "300 UAH"
+    },
+    {
+      "id": 3,
+      "dish": "Tiramisu",
+      "price": "260 UAH"
+    }
+  ]
+}

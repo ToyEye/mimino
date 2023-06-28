@@ -1,0 +1,40 @@
+{
+  "title": "Hot meals",
+  "menuList": [
+    {
+      "id": 1,
+      "dish": "Veal borscht with beans",
+      "ingredients": "Veal, potatoes, cabbage, carrots, onions, beans, garlic, tomatoes, greens, sour cream",
+      "weight": "400 g",
+      "price": "240 UAH"
+    },
+    {
+      "id": 2,
+      "dish": "Cheese soup with chicken",
+      "ingredients": "Chicken, potatoes, carrots, onions, mushrooms, soft cheese, greens",
+      "weight": "400 g",
+      "price": "200 UAH"
+    },
+    {
+      "id": 3,
+      "dish": "Carbonara pasta",
+      "ingredients": "Tagliatelle pasta, bacon, cream, Parmesan cheese, egg, greens",
+      "weight": "400 g",
+      "price": "430 UAH"
+    },
+    {
+      "id": 4,
+      "dish": "Pork steak",
+      "ingredients": "Pork tenderloin, spices, served with sweet chili sauce and vegetables",
+      "weight": "400 g",
+      "price": "500 UAH"
+    },
+    {
+      "id": 5,
+      "dish": "Gorbusha in white wine sauce",
+      "ingredients": "Tender redfish, cream sauce based on white wine",
+      "weight": "400 g",
+      "price": "400 UAH"
+    }
+  ]
+}
