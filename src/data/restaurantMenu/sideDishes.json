@@ -1,0 +1,40 @@
+{
+  "title": "Side dishes and snacks",
+  "menuList": [
+    {
+      "id": 1,
+      "dish": "Baked vegetables",
+      "ingredients": "Zucchini, pepper, tomato, eggplant",
+      "weight": "200 g",
+      "price": "230 UAH"
+    },
+    {
+      "id": 2,
+      "dish": "French fries",
+      "ingredients": "Potatoes, tomato sauce",
+      "weight": "150 g",
+      "price": "160 UAH"
+    },
+    {
+      "id": 3,
+      "dish": "Peasant-style potatoes",
+      "ingredients": "Potatoes, spices, spicy sauces",
+      "weight": "150 g",
+      "price": "160 UAH"
+    },
+    {
+      "id": 4,
+      "dish": "Crisp pickles from the barrel",
+      "ingredients": "Salted cucumber, pickled tomato, sauerkraut, Korean carrot",
+      "weight": "250 g",
+      "price": "350 UAH"
+    },
+    {
+      "id": 5,
+      "dish": "Chicken wings in honey sauce",
+      "ingredients": "Chicken wings, mustard-honey sauce, served with carrots, celery and blue cheese sauce",
+      "weight": "400 g",
+      "price": "400 UAH"
+    }
+  ]
+}
