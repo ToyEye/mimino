@@ -6,7 +6,7 @@ import Heading from "../reusable/Heading";
 
 import React from "react";
 
-const PricePerRoomModal = ({ room, onClose }) => {
+const PricePerRoomModal = ({ room = "double luxury room", onClose }) => {
   const [nightCounter, setNightCounter] = useState(1);
   const [price, setPrice] = useState(1000);
 

@@ -2,6 +2,10 @@ import Container from "../reusable/Container";
 import Heading from "../reusable/Heading";
 import RestaurantMenuList from "../RestaurantMenuList/RestaurantMeniList";
 
+import ButtonModal from "../reusable/ButtonModal";
+import BookTableModal from "../Modals/BookTableModal";
+import { useModalOpen } from "@/hooks/useModalOpen";
+
 import hotMeals from "data/restaurantMenu/hotMeals.json";
 import sideDishes from "data/restaurantMenu/sideDishes.json";
 import salads from "data/restaurantMenu/salads.json";
@@ -9,6 +13,8 @@ import desserts from "data/restaurantMenu/desserts.json";
 import drinks from "data/restaurantMenu/drinks.json";
 
 const RestaurantMenu = () => {
+  const { showTableModal, toggleModal } = useModalOpen();
+
   return (
     <section className="bg-dark pt-10 pb-[64px] md:py-20  lg:py-[100px]">
       <Container>
@@ -39,7 +45,14 @@ const RestaurantMenu = () => {
             />
           </div>
         </div>
+        <ButtonModal
+          text="book a table"
+          className="text-light  border-light hover:text-dark hover:bg-light m-auto  mt-[50px] "
+          openModal={toggleModal}
+          name="table"
+        />
       </Container>
+      {showTableModal && <BookTableModal onClose={toggleModal} />}
     </section>
   );
 };
