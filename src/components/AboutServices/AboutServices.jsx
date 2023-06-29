@@ -8,10 +8,13 @@ import useMediaRules from "helpers/useMediaRules";
 
 import ButtonModal from "../reusable/ButtonModal";
 import BookTableModal from "../Modals/BookTableModal";
+import PricePerRoomModal from "../Modals/PricePerRoomModal";
+import BookRoomModal from "../Modals/BookRoomModal";
 import { useModalOpen } from "@/hooks/useModalOpen";
 
 const AboutServices = ({ images, title }) => {
-  const { showTableModal, toggleModal } = useModalOpen();
+  const { showTableModal, showPriceModal, showRoomModal, toggleModal } =
+    useModalOpen();
 
   const [sizes, setSizes] = useState({
     width: 250,
@@ -48,14 +51,15 @@ const AboutServices = ({ images, title }) => {
               className="text-[40px] mb-6 leading-10 md:mb-8 md:text-[80px] md:leading-[80px]  lg:text-[90px] lg:leading-[90px] uppercase -tracking-[0.02em] lg:pt-[174px]"
             />
             <div className="flex gap-[14px]">
-              {title === "hotel" ? (
+              {title === "hotel" && (
                 <ButtonModal
                   text="Book a Room"
                   className=""
-                  openModal
+                  openModal={toggleModal}
                   name="room"
                 />
-              ) : (
+              )}
+              {title === "restaurant" && (
                 <ButtonModal
                   text="Book a Table"
                   className=""
@@ -63,7 +67,12 @@ const AboutServices = ({ images, title }) => {
                   name="table"
                 />
               )}
-              <ButtonModal text="View prices" className="" openModal />
+              <ButtonModal
+                text="View prices"
+                className=""
+                openModal={toggleModal}
+                name="price"
+              />
             </div>
             <TextDescription
               text="Whether you're in the mood for a hearty breakfast, a light lunch, or a romantic dinner, our menu has something for everyone."
@@ -84,6 +93,8 @@ const AboutServices = ({ images, title }) => {
         </div>
       </Container>
       {showTableModal && <BookTableModal onClose={toggleModal} />}
+      {showPriceModal && <PricePerRoomModal onClose={toggleModal} />}
+      {showRoomModal && <BookRoomModal onClose={toggleModal} />}
     </section>
   );
 };

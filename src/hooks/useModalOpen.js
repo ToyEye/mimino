@@ -22,8 +22,6 @@ export const useModalOpen = () => {
         break;
 
       default:
-        setShowTableModal(false);
-
         break;
     }
   };

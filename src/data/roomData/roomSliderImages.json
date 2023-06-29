@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "pathToMob": "/room/roomSlider/mobBed.jpg",
+    "pathToTab": "/room/roomSlider/tabBed.jpg",
+    "pathToDesk": "/room/roomSlider/deskBed.jpg",
+    "descr": "Bed in DOUBLE LUXURY ROOM"
+  },
+  {
+    "id": 2,
+    "pathToMob": "/room/roomSlider/mobKitchen.jpg",
+    "pathToTab": "/room/roomSlider/tabKitchen.jpg",
+    "pathToDesk": "/room/roomSlider/deskKitchen.jpg",
+
+    "descr": "Kitchen in DOUBLE LUXURY ROOM"
+  },
+  {
+    "id": 3,
+    "pathToMob": "/room/roomSlider/mobHall.jpg",
+    "pathToTab": "/room/roomSlider/tabHall.jpg",
+    "pathToDesk": "/room/roomSlider/deskHall.jpg",
+    "descr": "Hall in DOUBLE LUXURY ROOM"
+  }
+]

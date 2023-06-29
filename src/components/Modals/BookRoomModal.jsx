@@ -153,7 +153,6 @@ const BookRoomModal = ({ onClose }) => {
                 Double luxury room
               </option>
               <option
-                selected="selected"
                 value="triple"
                 className="bg-[#121212] hover:scale-1 pb-[18px] placeholder:uppercase placeholder:text-light text-light outline-[0] border-b-[1px] border-white w-full"
               >
