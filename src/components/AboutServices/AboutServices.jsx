@@ -41,7 +41,7 @@ const AboutServices = ({ images, title }) => {
   }, [media]);
 
   return (
-    <section className="pt-10 md:pb-10 lg:pt-[30px] lg:pb-12">
+    <section className="pt-10 md:pb-10 lg:pt-[30px] lg:pb-[81px]">
       <Container>
         <div className="flex flex-col lg:flex-row">
           <div className="mb-10 md:mb-[54px] lg:mb-0 lg:w-1/2 lg:flex lg:flex-col">

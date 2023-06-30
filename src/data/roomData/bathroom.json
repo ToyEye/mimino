@@ -1,0 +1,10 @@
+{
+  "title": "Bathroom:",
+  "list": [
+    { "id": 1, "item": "Private bathroom with shower" },
+    { "id": 2, "item": "Complimentary toiletries" },
+    { "id": 3, "item": "Hair dryer" },
+    { "id": 4, "item": "Fresh towels daily" },
+    { "id": 5, "item": "Deluxe bathrobes (in some room categories)" }
+  ]
+}

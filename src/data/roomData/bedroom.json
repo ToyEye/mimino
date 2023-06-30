@@ -1,0 +1,11 @@
+{
+  "title": "Bedroom:",
+  "list": [
+    { "id": 1, "item": "Comfortable beds with high-quality linens" },
+    { "id": 2, "item": "Blackout curtains" },
+    { "id": 3, "item": "Climate control (air conditioning and heating)" },
+    { "id": 4, "item": "Safe for valuables" },
+    { "id": 5, "item": "Writing desk and chair" },
+    { "id": 6, "item": "Flat-screen TV with cable channels" }
+  ]
+}

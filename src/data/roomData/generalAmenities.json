@@ -1,0 +1,14 @@
+{
+  "title": "General Amenities & Facilities:",
+  "list": [
+    { "id": 1, "item": "24-hour front desk service" },
+    { "id": 2, "item": "Daily housekeeping" },
+    { "id": 3, "item": "Free Wi-Fi throughout the hotel" },
+    { "id": 4, "item": "Elevator access" },
+    { "id": 5, "item": "Luggage storage" },
+    { "id": 6, "item": "Non-smoking rooms available" },
+    { "id": 7, "item": "Meeting rooms for business and events" },
+    { "id": 8, "item": "On-site parking (surcharge)" },
+    { "id": 9, "item": "Concierge services" }
+  ]
+}
