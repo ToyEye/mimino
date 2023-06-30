@@ -1,0 +1,11 @@
+{
+  "title": "Kitchen:",
+  "list": [
+    { "id": 1, "item": "In-room kitchenette (in some room categories)" },
+    { "id": 2, "item": "Refrigerator" },
+    { "id": 3, "item": "Microwave" },
+    { "id": 4, "item": "Electric kettle" },
+    { "id": 5, "item": "Cooking utensils and cutlery" },
+    { "id": 6, "item": "Dining table and chairs" }
+  ]
+}

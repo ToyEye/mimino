@@ -1,0 +1,10 @@
+{
+  "title": "Media:",
+  "list": [
+    { "id": 1, "item": "Flat-screen TV with cable channels" },
+    { "id": 2, "item": "High-speed Wi-Fi" },
+    { "id": 3, "item": "iPod docking station" },
+    { "id": 4, "item": "Speaker system" },
+    { "id": 5, "item": "Electrical outlets for charging devices." }
+  ]
+}
