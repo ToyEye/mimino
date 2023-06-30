@@ -11,7 +11,7 @@ const MobileMenu = ({ style, onShow }) => {
       className={`${style} ${onShowMenu} fixed w-full h-full top-[74px] left-0 pt-32 transition-transform z-10`}
     >
       <NavBar className="flex justify-center flex-col text-center gap-8 " />
-      <IconsList className=" gap-[14px]" />
+      <IconsList className="gap-[14px] bottom-[90px] absolute left-[25px] md:hidden" />
     </div>
   );
 };

@@ -23,7 +23,11 @@ const NavBar = ({ className }) => {
 
           return (
             <li key={name}>
-              <Link href={path} className={`${current} ${mainPage} py-2 `}>
+              <Link
+                href={path}
+                className={`${current} ${mainPage} py-2`}
+                aria-label={`link to ${name}`}
+              >
                 {name}
               </Link>
             </li>

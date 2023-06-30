@@ -5,7 +5,7 @@ import IconsList from "../reusable/IconsList";
 
 const Footer = () => {
   return (
-    <footer className="pt-6 pb-8 ">
+    <footer className="pt-6 pb-8 bg-[#F6F6F6]">
       <div className="pb-8 border-b-[0.5px] border-[#1212124D] ">
         <Container>
           <div className="flex items-center justify-between ">

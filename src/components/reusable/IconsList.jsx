@@ -1,6 +1,3 @@
-import { useState } from "react";
-import Link from "next/link";
-
 import PropTypes from "prop-types";
 
 import { FiFacebook, FiTwitter, FiInstagram } from "react-icons/fi";
@@ -28,3 +25,7 @@ const IconsList = ({ className }) => {
 };
 
 export default IconsList;
+
+IconsList.propTypes = {
+  className: PropTypes.string.isRequired,
+};
