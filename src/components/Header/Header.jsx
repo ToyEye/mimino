@@ -45,6 +45,7 @@ const Header = ({ main }) => {
           <button
             className={`cursor-pointer mr-[83px] lg:hidden `}
             onClick={onShowMenu}
+            aria-label="open mobile menu"
           >
             {showMenu ? (
               <AiOutlineClose size={29} />
