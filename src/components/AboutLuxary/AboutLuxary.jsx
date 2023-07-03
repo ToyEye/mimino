@@ -4,19 +4,21 @@ import Image from "next/image";
 import Container from "../reusable/Container";
 import Heading from "../reusable/Heading";
 import { TextDescription } from "../reusable/TextDescription";
-import useMediaRules from "helpers/useMediaRules";
 
 const AboutLuxary = () => {
   const [imgRoute, setImgRoute] = useState("mainLuxaryMob");
-  const media = useMediaRules();
 
   useEffect(() => {
-    if (media === "mobile") {
-      setImgRoute("mainLuxaryMob");
-    } else {
-      setImgRoute("mainLuxary");
-    }
-  }, [media]);
+    window
+      .matchMedia("(max-width: 767px)")
+      .addEventListener("change", (evt) => {
+        if (evt.matches) {
+          setImgRoute("mainLuxaryMob");
+        } else {
+          setImgRoute("mainLuxary");
+        }
+      });
+  }, []);
 
   return (
     <section className="py-20 ">
