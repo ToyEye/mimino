@@ -1,5 +1,3 @@
-import Media from "react-media";
-
 import Container from "../reusable/Container";
 
 import AboutKitcheMob from "./Parts/AboutKitcheMob";
