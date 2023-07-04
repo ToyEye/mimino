@@ -1,67 +1,41 @@
-import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import useMediaRules from "helpers/useMediaRules";
 
-const AboutRoomItem = ({ mob, tab, desk, description, index, side }) => {
-  const [mobSize, setMobSize] = useState([
-    "w-[158px] h-[149px] order-2",
-    "w-[335px] h-[468px] order-1",
-    "w-[158px] h-[149px] order-3",
-  ]);
+import classNames from "classnames";
 
-  const [tabSize, setTabSize] = useState([
-    "md:w-[337px] md:h-[175px] md:order-2",
-    "md:w-[335px] md:h-[468px] md:order-3",
-    " md:w-[223px] md:h-[261px] md:order-1",
-  ]);
+const AboutRoomItem = ({
+  screen,
+  description,
 
-  const [deskSize, setDeskSize] = useState([
-    "lg:w-[368px] lg:h-[395px]",
-    "lg:w-[539px] lg:h-[762px]",
-    "lg:w-[387px] lg:h-[510px]",
-  ]);
+  side,
+  mob,
+  tab,
+  desk,
+}) => {
+  const styles = classNames(
+    {
+      "first:w-[158px] first:h-[149px] first:order-2 w-[335px] h-[468px] order-1 last:w-[158px] last:h-[149px] last:order-3":
+        mob,
+    },
+    {
+      "first:w-[337px] first:h-[175px] first:order-3 w-[335px] h-[468px] order-1 last:w-[223px] last:h-[261px] last:order-2":
+        side && tab,
+    },
+    {
+      "first:w-[337px] first:h-[175px] first:order-2 w-[335px] h-[468px] order-3 last:w-[223px] last:h-[261px] last:order-1":
+        !side && tab,
+    },
 
-  useEffect(() => {
-    if (side) {
-      setTabSize([
-        "md:w-[337px] md:h-[175px] md:order-3",
-        "md:w-[335px] md:h-[468px] md:order-1",
-        " md:w-[223px] md:h-[261px] md:order-2",
-      ]);
+    {
+      "first:w-[368px] first:h-[395px]  w-[539px] h-[762px] last:w-[387px] last:h-[510px] ":
+        desk,
     }
-  }, [side]);
+  );
 
-  const media = useMediaRules();
-
-  if (media === "mobile") {
-    return (
-      <li className={`relative ${mobSize[index]}`}>
-        <Image className={mobSize[index]} fill src={mob} alt={description} />
-      </li>
-    );
-  }
-
-  if (media === "tablet") {
-    return (
-      <li className={`relative ${tabSize[index]}`}>
-        <Image
-          width={335}
-          height={468}
-          className={tabSize[index]}
-          src={tab}
-          alt={description}
-        />
-      </li>
-    );
-  }
-
-  if (media === "desktop") {
-    return (
-      <li className={`relative ${deskSize[index]}`}>
-        <Image fill src={desk} alt={description} />
-      </li>
-    );
-  }
+  return (
+    <li className={`relative ${styles}`}>
+      <Image className={styles} fill src={screen} alt={description} />
+    </li>
+  );
 };
 
 export default AboutRoomItem;

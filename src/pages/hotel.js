@@ -14,6 +14,16 @@ import { hotelFourSeaterRoomTextInfo } from "data/hotelData/hotelFourSeaterRoomT
 
 import hotelSliderImages from "data/hotelData/hotelSliderImages.json";
 
+const hotelData = [
+  { textInfo: doubleRoomTextInfo, data: doubleRoomImages, side: false },
+  { textInfo: tripleRoomTextInfo, data: tripleRoomImages, side: true },
+  {
+    textInfo: hotelFourSeaterRoomTextInfo,
+    data: hotelFourSeaterRoom,
+    side: false,
+  },
+];
+
 export default function Hotel() {
   return (
     <>
@@ -25,19 +35,14 @@ export default function Hotel() {
       </Head>
       <div className=" bg-[#F6F6F6]">
         <AboutServices images={hotelSliderImages} title="hotel" />
-        <AboutRoomSection
-          data={doubleRoomImages}
-          textInfo={doubleRoomTextInfo}
-        />
-        <AboutRoomSection
-          side
-          data={tripleRoomImages}
-          textInfo={tripleRoomTextInfo}
-        />
-        <AboutRoomSection
-          data={hotelFourSeaterRoom}
-          textInfo={hotelFourSeaterRoomTextInfo}
-        />
+        {hotelData.map(({ textInfo, data, side }) => (
+          <AboutRoomSection
+            key={textInfo.heading}
+            textInfo={textInfo}
+            data={data}
+            side={side}
+          />
+        ))}
       </div>
     </>
   );
